@@ -7,11 +7,23 @@
 \input{headers/default}
 \input{headers/si}
 % \input{headers/bibliography}
-% \input{headers/drawings}
+\input{headers/drawings}
 % \input{headers/fancy}
 
 \begin{document}
 \maketitle
 
+
+\begin{tikzpicture}
+\draw (-8,1.5) -- (-4.5,1.5);
+\draw [decorate, decoration={coilup, aspect=0.4, amplitude=7 mm,  segment length=3mm}]   (-4.5,1.5) -- (-4.5,-1.5);
+\draw [decorate, decoration={coildown, aspect=0.4, amplitude=7 mm,  segment length=2mm}] (4.5,-1.5) -- (4.5,1.5);
+\draw (4.5,1.5) -- (8,1.5);
+\draw [fill=white, even odd rule] (0,0) circle (5cm) (0,0) circle (4cm);
+\draw [decorate, decoration={coilup, aspect=0.4, amplitude=7 mm,  segment length=2mm}]   (4.5,-1.5) -- (4.5,1.5);
+\draw [decorate, decoration={coildown, aspect=0.4, amplitude=7 mm,  segment length=3mm}] (-4.5,1.5) -- (-4.5,-1.5);
+\draw (-8,-1.5) -- (-4.5,-1.5);
+\draw (4.5,-1.5) -- (8,-1.5);
+\end{tikzpicture}
 
 \end{document}
